@@ -35,6 +35,8 @@ function validAnagram(s, t) {
   return true;
 }
 
+module.exports = validAnagram;
+
 // function validAnagram (s, t){
 //   if (s.length !== t.length) return false;
 
