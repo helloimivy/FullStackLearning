@@ -12,7 +12,7 @@
  * Output: false
  *  */
 
-function validAnagram(s, t) {
+export function validAnagram(s, t) {
   if (s.length !== t.length) return false;
 
   const hash = {};
