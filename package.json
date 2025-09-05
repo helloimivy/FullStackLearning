@@ -1,0 +1,15 @@
+{
+  "name": "fullstacklearning",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "My journey with Leetcode style data structures and algo problems",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.1.3"
+  }
+}
