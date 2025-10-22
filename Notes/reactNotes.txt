@@ -1,0 +1,63 @@
+React is an external library theat helps us create websites easier
+
+How does React help us create websites easier?
+    Creating websites using React fels more natural
+    JSX will let you find errors more easily
+    Can insert values inside of JSX elements --> think calculations similar to a temp literal in JS
+
+
+
+** Loading React from his site for version control for the course
+
+What are the difference between React and React DOM?
+    React as a whole for websites and mobile apps
+    React is for shared features between websites and mobile apps
+    React DOM for features specific to websites
+    React and ReactNative for mobile applications
+
+querySelector --> to capture a specific part of the document
+create root(yourQuerySelector).render(text or program you want to display)
+
+
+** will usually put scripts at bottom of page in html so that the HTML is loaded first
+then your JavaScript scripts will modify
+
+What is Babel and why do we use it?
+    Babel --> JavaScript compiler (another external library)
+
+    Why use a compiler for JavaScript when we are writing in JavaScript?
+        We are writing in JSX --> higher level that allows to wrtie HTML directly in our JS code
+        almost like a shortcut for using DOM
+    Problem with JSX?
+        Web Browsers don't understand JSX, which is why we use Babel to translate
+
+How to display multiple elements on our website using render?
+    use a div element to group the multiple elemets together
+
+What are components?
+    "Puzzle Pieces" of the website that are reusable
+    Names must start with capital letters (PascalCase)
+
+    Allow us to create our own HTML elements.
+
+
+** self closing tags are often used as a best practice in JSX.
+
+** div is a block element and will always take up an entire line by itself
+
+** props on messages for attibutes; make our componets reusable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
