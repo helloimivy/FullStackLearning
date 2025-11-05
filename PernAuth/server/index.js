@@ -6,12 +6,14 @@ const cors = require("cors");
 app.use(express.json()); //req.body
 app.use(cors());
 
-//routes
+//dashboard route
 
-app.listen(5500, () => {
-  console.log("server is running on port 5500");
-});
+app.use("/dashboard", require("./routes/dashboard"));
 
 //register and login routes
 
 app.use("/auth", require("./routes/jwtAuth"));
+
+app.listen(5500, () => {
+  console.log("server is running on port 5500");
+});
