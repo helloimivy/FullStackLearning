@@ -4,6 +4,7 @@ const InputTodo = () => {
   const [description, setDescription] = useState("");
 
   const onSubmitForm = async (e) => {
+    e.preventDefault(); // Add this line to prevent page refresh
     try {
       const body = { description };
       const response = await fetch("http://localhost:5000/todos", {
@@ -28,7 +29,8 @@ const InputTodo = () => {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
-        <button className="btn btn-success">Add</button>
+        <input type="submit" className="btn btn-success" value="Add" />{" "}
+        {/* Changed button to input of type submit. We need this for form submission */}
       </form>
     </Fragment>
   );
