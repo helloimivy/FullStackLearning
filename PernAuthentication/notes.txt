@@ -2,3 +2,4 @@
 - .env file will store database credentials and secret keys, so that we do not have to hard code them into the project
 - make sure to check that the port for the local host on client server works; may need to change
 - running into problem with 'cant find module imported from' error
+- stopped at 33:50
