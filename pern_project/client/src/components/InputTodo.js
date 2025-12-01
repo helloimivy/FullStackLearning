@@ -4,15 +4,16 @@ const InputTodo = () => {
   const [description, setDescription] = useState("");
 
   const onSubmitForm = async (e) => {
+    e.preventDefault();
     try {
       const body = { description };
-      const response = await fetch("http://localhost:5000/todos", {
+      const response = await fetch("http://localhost:5001/todos", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
       });
 
-      console.log(response);
+      window.location = "/";
     } catch (err) {
       console.error(err.message);
     }
